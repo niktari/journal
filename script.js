@@ -42,7 +42,7 @@ t[i].onclick = function(){
 
 document.onmousemove = function(e){
 
-    cursorElem.style.top = (e.clientY) + "px";
-    cursorElem.style.left = (e.clientX) + "px";
+    cursorElem.style.top = (e.pageY) + "px";
+    cursorElem.style.left = (e.pageX) + "px";
 
 }
