@@ -1,13 +1,16 @@
 let c = document.getElementsByClassName("content");
 let t = document.querySelectorAll(".title a");
 let time = document.querySelectorAll(".timestamp");
+let grid = document.querySelectorAll(".grid-container");
 let l = document.querySelectorAll(".links");
 let b = document.querySelectorAll(".circle");
 let cursorElem = document.getElementById("cursor");
 
-for (let i = 0; i < t.length; i++){
+console.log(grid);
 
-t[i].onclick = function(){
+for (let i = 0; i < grid.length; i++){
+
+grid[i].onclick = function(){
 
         if(c[i].style.display == "block"){
             c[i].style.display = "none";
@@ -17,7 +20,7 @@ t[i].onclick = function(){
 
     }
 
-    t[i].onmouseover = function(){
+    grid[i].onmouseover = function(){
 
         this.style.color = "#e94f29";
         time[i].style.color = "#e94f29";
@@ -27,7 +30,7 @@ t[i].onclick = function(){
 
     }
     
-    t[i].onmouseout = function(){
+    grid[i].onmouseout = function(){
 
             this.style.color = "#262f2e";
             time[i].style.color = "#262f2e";

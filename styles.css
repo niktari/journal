@@ -137,12 +137,17 @@ b {
   margin-top: 40px;
 }
 
-.grid-container {
+.grid-container,
+.drawer {
   display: grid;
   grid-template-columns: 12% 25% 40% 15%;
   grid-gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   margin-right: 15px;
+}
+
+.grid-container:hover {
+  cursor: pointer;
 }
 
 .content {
@@ -196,12 +201,12 @@ b {
     font-size: 16px;
   }
 
-  .grid-container {
+  .grid-container,
+  .drawer {
     display: grid;
     grid-template-columns: 32% 38% 25%;
     grid-gap: 15px;
-    margin-bottom: 20px;
-    margin-right: 15px;
+    margin-right: 35px;
   }
 
   h1 {
@@ -210,10 +215,6 @@ b {
 
   .bullet {
     display: none;
-  }
-
-  .grid-container {
-    margin-right: 30px;
   }
 
   .content a {
