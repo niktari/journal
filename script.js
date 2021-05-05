@@ -1,12 +1,9 @@
 let c = document.getElementsByClassName("content");
-let t = document.querySelectorAll(".title a");
 let time = document.querySelectorAll(".timestamp");
 let grid = document.querySelectorAll(".grid-container");
 let l = document.querySelectorAll(".links");
 let b = document.querySelectorAll(".circle");
 let cursorElem = document.getElementById("cursor");
-
-console.log(grid);
 
 for (let i = 0; i < grid.length; i++){
 
@@ -15,7 +12,7 @@ grid[i].onclick = function(){
         if(c[i].style.display == "block"){
             c[i].style.display = "none";
         } else{
-            c[i].style.display = "block";            
+            c[i].style.display = "block";           
         }
 
     }
