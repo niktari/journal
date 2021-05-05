@@ -110,6 +110,10 @@ body {
   margin: 30px;
 }
 
+::selection {
+  background: #e94f29;
+}
+
 h1 {
   font-size: 26px;
 }
